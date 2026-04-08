@@ -24,7 +24,7 @@
 
         <button onclick = "mostrarMensagem()">Clica aqui🤭</button>
 
-        <button onclick = "toogleMusica()" id = "btnMusica">Musiquinha 🎶</button>
+        <button onclick = "toggleMusica()" id = "btnMusica">Musiquinha 🎶</button>
 
         </div>
 
@@ -33,7 +33,7 @@
                 alert("Eu te amoo 😋😘");
             }
             
-            function toogleMusica() {
+            function toggleMusica() {
             const musica = document.getElementById("musica");
             const botao = document.getElementById("btnMusica");
 
@@ -41,7 +41,7 @@
                     musica.play();
                     botao.innerText = "Pausar música";
                 } else{
-                    musica.paused();
+                    musica.pause();
                     botao.innerText = "Tocar música";
                 }
             }   
