@@ -22,20 +22,28 @@
             Layane, que venham infinitos meses ao se lado.
         </p>
 
-        <button onclick = "mostrarMensagem()">Clique aqui🤭</button>
+        <button onclick = "mostrarMensagem()">Clica aqui🤭</button>
 
-        <button onclick = "tocarmusica()">Musiquinha</button>
+        <button onclick = "tocarmusica()" id = "btnMusica">Musiquinha 🎶</button>
 
         </div>
 
         <script>
             function mostrarMensagem(){
-                alert("Eu te amoo 🤞🏼");
+                alert("Eu te amoo 😋😘");
             }
             
             function tocarmusica() {
             const musica = document.getElementById("musica");
-            musica.play();
+            const botao = document.getElementById("btnMusica");
+
+                if (musica.paused){
+                    musica.play();
+                    botao.innerText = "Pausar música";
+                } else{
+                    musica.paused();
+                    botao.innerText = "Tocar música";
+                }
             }   
         </script>
     </body>
