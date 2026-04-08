@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Nosso Dia</title>
+        <link rel = "stylesheet" href = "style.css">
+        <audio id="musica" loop>
+            <source src="pupila.mp3.mp3" type="audio/mpeg">
+        </audio>
+    </head>
+    <body>
+        <div class = "card">
+        <h1>Dia 8 💖</h1>
+        <p>
+            Hoje faz 6 meses que te conheci,<br>
+            e não tenho dúvida alguma de que foi<br>
+            a melhor coisa que aconteceu<br>
+            na minha vida.<br>
+        </p>
+
+        <div class = "coracao">❤</div>
+
+        <p>
+            Layane, que venham infinitos meses ao se lado.
+        </p>
+
+        <button onclick = "mostrarMensagem()">Clique aqui🤭</button>
+
+        <button onclick = "tocarmusica()">Musiquinha</button>
+
+        </div>
+
+        <script>
+            function mostrarMensagem(){
+                alert("Eu te amoo 🤞🏼");
+            }
+            
+            function tocarmusica() {
+            const musica = document.getElementById("musica");
+            musica.play();
+            }   
+        </script>
+    </body>
+</html>
